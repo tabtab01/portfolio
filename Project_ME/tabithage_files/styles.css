@@ -1,0 +1,92 @@
+/*Gallery Page Styles*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px; 
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px; 
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+img {
+    height: 300px;
+    width: 250px;
+}
+
+figure {
+    display: inline-block;
+}
+
+header {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../imgs/trees.jpg);
+    background-size: cover;
+    height: 70vh;
+    max-width: 100%;
+  }
+
+  header h1 {
+      color: white;
+      font-family: 'Meddon', cursive;     
+      font-size: 70px;
+      position: absolute;
+      top: 370px;
+      left: 750px;
+  }
+/* navigation styling */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    padding: 8px;
+    background-color: #787878;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+/* contact form */
+input {
+    display: block;
+}

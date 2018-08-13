@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***********
+^^ css reset above ^^
+ **********/
+
+/**********
+Gallery Page Styles
+**********/
+/* .container {
+    position: relative;
+    width: 50%;
+}
+.container img {
+    display: block;
+    width: 250px;
+    height: 300px;
+}
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    background-color: gray; 
+    opacity: .5;
+    display: hidden;
+    width: 250px;
+    height: 300px;
+    transition: 1s ease;
+}
+.container:hover .overlay{
+    bottom: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.container p{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: 50% 50%;
+    text-align: center;
+} */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px; 
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px; 
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+img {
+    height: 300px;
+    width: 250px;
+}
+
+figure {
+    display: inline-block;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.gallery {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.galleryHeader {
+    background: 
+    url(../imgs/photographsHeader.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    position: relative;
+    background-position: 0px -150px;
+}
+/**********
+ header image and text
+ **********/
+header {
+     background: 
+    url(../imgs/headerImg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+/**********
+ about me 
+ **********/
+.bioHeader {
+    background: 
+    url(../imgs/aboutHeader.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    position: relative;
+    background-position: 0px -150px;
+}
+.quote {
+    font-style: italic;
+}
+.profilePhoto {
+    height: 200px;
+    width: 150px;
+    margin-top: 20px;
+}
+/**********
+ navigation styling 
+ **********/
+nav {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 1%;
+    padding: 0;
+    width: auto;
+}
+
+nav ul li {
+    display: inline-block; 
+}
+
+nav ul li a {
+    background-color: #787878;
+    padding: 8px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+/* need to change this */
+@media screen and (max-width: 600px) {
+    nav {
+        font-size: 10px;
+    } 
+}
+
+/*********** 
+text styling 
+**********/
+* {
+    font-family: 'Roboto', sans-serif;}
+
+h1 {
+    font-family: 'Meddon', cursive;    
+    font-size: 40px;
+    text-align: center; 
+    margin: 4%;
+}
+
+h2 {
+    font-size: 30px; 
+    /* font-family: 'Open Sans', sans-serif; */
+    font-weight: bold;
+}
+
+h2 ul li{
+    text-align: justify;
+}
+
+p, .resume {
+    margin-top: 5%;
+}
+
+body {
+    text-align: center;
+}
+
+/**********
+ resume 
+ **********/
+.references {
+    color: black;
+}
+
+.resumeHeader {
+    background: 
+   url(../imgs/resumeHeader.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 200px;
+   width: 100%;
+   position: relative;
+   background-position: 0px -150px;
+}
+
+
+/***********
+ code pen 
+ **********/
+.codePen {
+    margin-top: 5%;
+}
+
+.codePen p {
+    margin-bottom: 5%;
+}
+
+.codePen a {
+    color: black;
+}
+.codeImg {
+    height: 400px;
+    width: 600px;
+}
+.codeHeader {
+    background: 
+   url(../imgs/codePenHeader.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 200px;
+   width: 100%;
+   position: relative;
+   background-position: 0px -150px;
+}
+/********** 
+contact form 
+***********/
+.form {
+    text-align: center;
+    display: block;
+    margin-top: 5%;
+}
+.contactHeader {
+    background: 
+    url(../imgs/contactMeHeader.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    position: relative;
+    background-position: 0px -150px; 
+}
+/**********
+ footer 
+ **********/
+footer {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10%;
+    text-align: center;
+}
+
+footer, footer a {
+    text-decoration: none;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+}
