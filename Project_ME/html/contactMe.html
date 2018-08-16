@@ -6,50 +6,56 @@
         <link rel="stylesheet" type="text/css" media="screen" href="../css/styles.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">   
+        <script src="../js/main.js"></script>
     </head>
     <body>
         <header class="contactHeader">
+            <h1>Contact Me</h1>
         </header>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="bio.html">About Me</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="codePen.html">CodePen</a></li>
-                <li><a href="gallery.html">Photographs</a></li>
-                <li><a href="contactMe.html">Contact Me</a></li>
+            <ul class="navUl">
+                <li><a class="navA" href="index.html">Home</a></li>
+                <li><a class="navA" href="bio.html">About Me</a></li>
+                <li><a class="navA" href="resume.html">Resume</a></li>
+                <li><a class="navA" href="codePen.html">CodePen</a></li>
+                <li><a class="navA" href="gallery.html">Photographs</a></li>
+                <li><a class="navA" href="contactMe.html">Contact Me</a></li>
             </ul>  
         </nav>
+        <p class="contactText">
+            Hey! Thanks for checking out my website! If you have questions, comments, or concerns feel free to get in touch. I look forward
+            to hearing from you.
+        </p>
     <main class="form">
         <form name="contactForm" action="#" method="get">
-            <div>
+            <div class="contactInfo">
                 <label for="name">Name:</label>
             </div>
-            <div>
-                <input type="text" id="name" name="name">
+            <div class="contactInfo">
+                <input type="text" id="name" name="name" placeholder="Required">
             </div>
-            <div>
+            <div class="contactInfo">
                 <label for="company">Company:</label>
             </div>
-            <div>
+            <div class="contactInfo">
                 <input type="text" id="company" name="company">
             </div>
-            <div>
+            <div class="contactInfo">
                 <label for="email">Email:</label>
             </div>
-            <div>
-                <input type="text" id="email" name="email">
+            <div class="contactInfo">
+                <input type="text" id="email" name="email" placeholder="Required">
             </div>
-            <div>
+            <div class="contactInfo">
                 <label for="phone">Phone:</label>
             </div>
-            <div>
-                <input type="text" id="phone" name="phone">
+            <div class="contactInfo">
+                <input type="text" id="phone" name="phone" placeholder="Required">
             </div>
-            <div>
+            <div class="contactInfo">
                 <textarea name="comments" placeholder="Enter Comments..." cols="40" rows="10"></textarea>
             </div>
-            <input class="submit" type="submit" value="Submit">
+            <input class="submit" type="submit" value="Submit" onclick=validateForm()>
         </form>
     </main>
         <footer>

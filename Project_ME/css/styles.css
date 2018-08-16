@@ -47,70 +47,87 @@ table {
 	border-spacing: 0;
 }
 
-/***********
-^^ css reset above ^^
- **********/
+/**************************************
 
-/**********
+^^ css reset above ^^
+
+***************************************/
+
+/***************************************
+
 Gallery Page Styles
-**********/
-/* .container {
-    position: relative;
-    width: 50%;
-}
-.container img {
-    display: block;
-    width: 250px;
-    height: 300px;
-}
-.overlay {
-    position: absolute;
-    bottom: 100%;
-    background-color: gray; 
-    opacity: .5;
-    display: hidden;
-    width: 250px;
-    height: 300px;
-    transition: 1s ease;
-}
-.container:hover .overlay{
-    bottom: 0;
-    height: 100%;
-    overflow: hidden;
-}
-.container p{
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: 50% 50%;
-    text-align: center;
-} */
+
+****************************************/
 .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px; 
 }
-
 .column {
     flex: 25%;
     max-width: 25%;
-    padding: 0 4px;
+    padding: 0 25%;
 }
-
 .column img {
-    margin-top: 8px; 
+    margin-top: 50%; 
     vertical-align: middle;
 }
-
+img {
+    height: 300px;
+    width: 250px;
+}
+figure {
+    display: inline-block;
+}
+.gallery {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.galleryHeader {
+    background: 
+    url(../imgs/trees.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    background-position: 0px -150px; 
+} 
+.galleryHeader h1 {
+    position: absolute;
+    color: #49494b;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.container {
+    position: relative;
+    overflow: hidden;
+    background-color: #49494b;
+}
+.content-overlay:hover img{
+    opacity: 0.2;
+}
+.content-details {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    top: 100px;
+    padding: 15px 20px;
+    color: white;
+    display: none;
+}
+ .content-overlay:hover ~ .content-details{
+    display: block;
+}
+.contentImg {
+    position: relative;
+}
 @media screen and (max-width: 800px) {
     .column {
         flex: 50%;
         max-width: 50%;
     }
 }
-
 @media screen and (max-width: 600px) {
     .column {
         flex: 100%;
@@ -118,36 +135,11 @@ Gallery Page Styles
     }
 }
 
-img {
-    height: 300px;
-    width: 250px;
-}
+/*******************************************
 
-figure {
-    display: inline-block;
-}
+ home page
 
-figcaption {
-    text-align: center;
-}
-
-.gallery {
-    margin-top: 5%;
-    margin-left: 5%;
-}
-.galleryHeader {
-    background: 
-    url(../imgs/photographsHeader.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 100%;
-    position: relative;
-    background-position: 0px -150px;
-}
-/**********
- header image and text
- **********/
+ *******************************************/
 header {
      background: 
     url(../imgs/headerImg.png);
@@ -157,69 +149,96 @@ header {
     width: 100%;
     position: relative;
 }
-/**********
- about me 
- **********/
+.mainImg {
+    margin-top: 5%;
+    height: 400px;
+    width: 350px;
+}
+
+/***********************************************
+
+ about me
+
+ ***********************************************/
 .bioHeader {
     background: 
-    url(../imgs/aboutHeader.png);
-    background-size: cover;
+    url(../imgs/trees.jpg);
     background-repeat: no-repeat;
-    height: 200px;
+    height: 300px;
     width: 100%;
     position: relative;
     background-position: 0px -150px;
 }
-.quote {
-    font-style: italic;
+.bioHeader h1{
+    position: absolute;
+    color: #49494b;
+    margin-top: 5%;
+    margin-left: 5%;
 }
 .profilePhoto {
-    height: 200px;
-    width: 150px;
+    height: 300px;
+    width: 250px;
     margin-top: 20px;
 }
-/**********
- navigation styling 
- **********/
+
+/*****************************************
+
+ navigation styling
+
+ *****************************************/
 nav {
     display: block;
     text-align: center;
     margin: auto;
+    margin-top: 2%;
 }
 
-nav ul {
+.navUl {
     list-style-type: none;
     margin: 1%;
     padding: 0;
     width: auto;
 }
 
-nav ul li {
+.navUl li {
     display: inline-block; 
 }
 
-nav ul li a {
-    background-color: #787878;
+.navA {
+    background-color: #d1bfa7;
     padding: 8px;
-    color: white;
+    color: #49494b;
     text-align: center;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;}
 
-nav ul li a:hover {
-    background-color: #111;
+.navA:hover {
+    background-color: #bd8c7d;
 }
-/* need to change this */
 @media screen and (max-width: 600px) {
-    nav {
-        font-size: 10px;
-    } 
-}
+    .navUl {
+        list-style-type: none;
+        margin: none;
+        padding: none;
+        background-color: #d1bfa7;
+        }
+    .navA {
+        display: block;
+        color: white;
+        padding: 8px 16px;
+        text-decoration: none;
+        }
+    .navA:hover {
+        background-color: #8e8e90;
+                }
+    }
 
-/*********** 
-text styling 
-**********/
-* {
+/**************************************************
+
+text styling
+
+***************************************************/
+*, .contactText{
     font-family: 'Roboto', sans-serif;}
 
 h1 {
@@ -231,7 +250,6 @@ h1 {
 
 h2 {
     font-size: 30px; 
-    /* font-family: 'Open Sans', sans-serif; */
     font-weight: bold;
 }
 
@@ -246,29 +264,41 @@ p, .resume {
 body {
     text-align: center;
 }
+.quote {
+    font-style: italic;
+    color: #8e8e90;
+}
 
-/**********
- resume 
- **********/
+/**************************************************
+
+ resume
+
+ **************************************************/
 .references {
     color: black;
 }
 
 .resumeHeader {
     background: 
-   url(../imgs/resumeHeader.png);
-   background-size: cover;
+   url(../imgs/trees.jpg);
    background-repeat: no-repeat;
-   height: 200px;
+   height: 300px;
    width: 100%;
    position: relative;
    background-position: 0px -150px;
 }
+.resumeHeader h1 {
+    position: absolute;
+    color: #49494b;
+    margin-top: 5%;
+    margin-left: 5%;
+}
 
+/*********************************************
 
-/***********
- code pen 
- **********/
+ code pen
+
+ *********************************************/
 .codePen {
     margin-top: 5%;
 }
@@ -281,22 +311,36 @@ body {
     color: black;
 }
 .codeImg {
-    height: 400px;
-    width: 600px;
+    height: 25em;
+    width: 38em;
 }
 .codeHeader {
     background: 
-   url(../imgs/codePenHeader.png);
-   background-size: cover;
+   url(../imgs/trees.jpg);
    background-repeat: no-repeat;
-   height: 200px;
+   height: 300px;
    width: 100%;
    position: relative;
    background-position: 0px -150px;
 }
-/********** 
-contact form 
-***********/
+.codeHeader h1 {
+    position: absolute;
+    color: #49494b;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+@media screen and (max-width: 600px) {
+    .codeImg{
+        height: 250px;
+        width: 400px;
+    }
+}
+
+/*******************************************
+
+contact form
+
+********************************************/
 .form {
     text-align: center;
     display: block;
@@ -304,17 +348,35 @@ contact form
 }
 .contactHeader {
     background: 
-    url(../imgs/contactMeHeader.png);
-    background-size: cover;
+    url(../imgs/trees.jpg);
     background-repeat: no-repeat;
-    height: 200px;
+    height: 300px;
     width: 100%;
     position: relative;
     background-position: 0px -150px; 
 }
-/**********
- footer 
- **********/
+.contactHeader h1 {
+    position: absolute;
+    color: #49494b;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.contactInfo {
+    margin-top: 2%;
+}
+.submit {
+    height: 20px;
+    width: 100px;
+    margin: 20px;
+    color: #49494b;
+    font-size: 30px;
+}
+
+/*************************************************
+
+ footer
+
+ *************************************************/
 footer {
     font-family: 'Roboto', sans-serif;
     margin-top: 10%;
@@ -329,3 +391,4 @@ footer, footer a {
     height: 40px;
     width: 40px;
 }
+
