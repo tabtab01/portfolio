@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import '/Users/tgeiger/weeklychallenges-r2h2018-1/eCommerce/ecomm/src/App.css';
+import '/Users/tgeiger/portfolio/eCommerce/ecomm/src/App.css';
 
 const Nav = () => {
     return (

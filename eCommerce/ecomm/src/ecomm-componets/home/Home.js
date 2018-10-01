@@ -1,5 +1,5 @@
 import React from "react";
-import '/Users/tgeiger/weeklychallenges-r2h2018-1/eCommerce/ecomm/src/App.css';
+import '/Users/tgeiger/portfolio/eCommerce/ecomm/src/App.css';
 
 const Home = () => {
     return (  
@@ -14,6 +14,7 @@ const Home = () => {
             <hr/>
             <h2>Fall Tour</h2>
             <p>Our fall tour includes Blowing Rock, Hot Springs, Saluda, and Bryson City! Choose from one experience or add mulitple to your itenarary.</p>
+            <img src="" alt=""/>
         </div>
   )
 };

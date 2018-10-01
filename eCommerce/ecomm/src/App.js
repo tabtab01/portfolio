@@ -17,7 +17,7 @@ class App extends Component {
     }
 
 componentDidMount() {
-    fetch("http://api.jsonbin.io/b/5bad10ffa97c597b3c5a1597/5")
+    fetch("http://api.jsonbin.io/b/5bad10ffa97c597b3c5a1597/6")
         .then(result => result.json())
         .then(resultJson => {
             this.setState({
@@ -39,12 +39,18 @@ waterfallFilter() {
 
 priceFilter() {
   let productsToFilter = [...this.state.products];
-  let filteredPrice = productsToFilter.filter( price => price.waterFall < 600.00);
+  let filteredPrice = productsToFilter.filter( location => location.price < 600 );
   this.setState(
     {
       filteredProducts: filteredPrice
     }
   )
+}
+
+resetFilter() {
+  this.setState({
+    filteredProducts: this.state.products
+  })
 }
  
   render() {
@@ -57,7 +63,8 @@ priceFilter() {
             <Route path="/contact" component={Contact} exact />
             <Route path="/products" render={
               () => (
-                <Products waterfallFilter={() => this.waterfallFilter()} products={this.state.products} filteredProducts={this.state.filteredProducts}/>
+                <Products waterfallFilter={() => this.waterfallFilter()} products={this.state.products} filteredProducts={this.state.filteredProducts} 
+                priceFilter={() => this.priceFilter()} resetFilter={() => this.resetFilter()} />
               )
             }/>
           </Switch>

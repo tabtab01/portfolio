@@ -1,5 +1,5 @@
 import React from "react";
-import '/Users/tgeiger/weeklychallenges-r2h2018-1/eCommerce/ecomm/src/App.css';
+import '/Users/tgeiger/portfolio/eCommerce/ecomm/src/App.css';
 const Products = (props) => {
                 var displayProducts = [];
 
@@ -9,7 +9,7 @@ const Products = (props) => {
                             displayProducts.push(
                             <div>
                                 <h2>{element.location}</h2>
-                                <h3>{element.price}</h3>
+                                <h3>${element.price}</h3>
                                 <img className="productImgs" src={element.image} alt="" />
                                 <p>{element.description}</p>
                             </div>
@@ -25,7 +25,8 @@ const Products = (props) => {
         </p>
         <p>Choose an experience below and contact us to get started!</p>
         <button onClick={() => props.waterfallFilter()}>Only Waterfalls</button>
-        <button onClick={() => props.priceFilter()}>Special Rates</button>
+        <button onClick={() => props.priceFilter()}>Under $600</button>
+        <button onClick={() => props.resetFilter()}>Reset</button>
         <div>{displayProducts}</div>
         
     </section>

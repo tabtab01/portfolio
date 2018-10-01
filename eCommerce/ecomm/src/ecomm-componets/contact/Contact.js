@@ -1,5 +1,5 @@
 import React from "react";
-import '/Users/tgeiger/weeklychallenges-r2h2018-1/eCommerce/ecomm/src/App.css';
+import '/Users/tgeiger/portfolio/eCommerce/ecomm/src/App.css';
 
 const Contact = () => {
     return (
@@ -20,7 +20,7 @@ const Contact = () => {
                     <input name="email"/>
                 </div>   
                 <select name="experiences">
-                    <option value="" selected disabled hidden>Choose here</option>
+                    <option value=""disabled selected>Choose here</option>
                     <option value="blowingRock">Blowing Rock</option>
                     <option value="saluda">Saluda</option>
                     <option value="hotSprings">Hot Springs</option>
