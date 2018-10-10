@@ -52,11 +52,7 @@ table {
 ^^ CSS RESET ABOVE ^^
 
 ******************************/
-/*** background images ***/
 
-/* .contact-page-background {
-	background-image: url("pinesBackground.jpg");
-} */
 /*****************************
 FONT
 *****************************/
@@ -76,12 +72,20 @@ h2 {
 p {
 	line-height: 1.5;
 }
-hr {
-	
-}
+
+/*****************************
+ BACKGROUND 
+ ****************************/
+body {
+	background-color: #C7D5D6;
+	position: relative;
+	padding-bottom: 80px;
+	min-height: 85vh;
+ }
 /*****************************
 NAV
 ****************************/
+
 nav ul li {
 	list-style-type: none;
 	display: inline-block;
@@ -89,67 +93,33 @@ nav ul li {
 nav ul li a {
 	text-decoration: none;
 	color: black;
+	font-size: 25px;
+	padding-top: 0;
+	padding: 10px;
 }
 
 /*****************************
-SLIDER IMAGES ON HOME PAGE
-*****************************/
-.mySlides {
-	box-sizing: border-box;
+ HOME HEADER 
+ ****************************/
+ .home-header {
+	height: 600px; 
+	width: 80%;
+	margin: 0 auto;
+	margin-top: -250px;
+	background-image: url("http://blog.bcbsnc.com/wp-content/uploads/2014/09/shutterstock_85382275.jpg");
+	background-position: center;
+	background-size: cover;
 }
-.slide-container {
-	max-width: 1000px;
-	position: relative;
-	margin: auto;
+.home-content, section p {
+	max-width: 70%;
+	margin: 0 auto;
+	margin-top: 20px;
 }
-.mySlides {
-	display: none;
-}
-.slideImg {
+hr {
 	width: 800px;
-	height: 500px;
+	margin-top: 20px;
 }
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  text-align: center;
-}
-.active, .dot:hover {
-	background-color: #717171;
-  }
-  /* animations */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-@media screen and (max-width: 600px) {
-	.slideImg {
-		width: 100%;
-	}
-}
+
 /*****************************
 PRODUCTS
 *****************************/
@@ -158,6 +128,19 @@ PRODUCTS
 	height: 300px;
 }
 
+/****************************
+ BUTTONS
+****************************/
+.filter-buttons, .submit-button {
+	background-color: white;
+	color: black;
+	border: 2px solid #e7e7e7;
+	padding: 10px;
+	margin: 5px;
+}
+.filter-buttons:hover, .submit-button:hover {
+	background-color: #e7e7e7;
+}
 /*****************************
 CONTACT PAGE
 *****************************/
@@ -174,25 +157,14 @@ textarea {
 	border-color: black;
 	background-color: #efeff5;
 }
-.submit-button {
-	padding: 5px;
-}
+
 /*****************************
 FOOTER
 \*****************************/
-.footer {
-	background-color: #ABB9B9;
-	opacity: .80;
-}
 footer {
 	width: 100%;
-	height: 90px;
+	height: 50px;
+	bottom: 0px;
+	position: absolute;
+
 }
-/******************************
-MEDIA QUERIES
-******************************/
-/* @media screen and (max-width: 600px) {
-	.my-slide {
-		width: 500px;
-	}
-} */

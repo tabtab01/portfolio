@@ -5,19 +5,18 @@ import Home from "./ecomm-componets/home/Home";
 import Products from "./ecomm-componets/products/Products";
 import Contact from "./ecomm-componets/contact/Contact"
 import Nav from "./ecomm-componets/nav";
+import FooterContent from "./ecomm-componets/footer";
 
 class App extends Component {
   constructor() {
     super();
-
     this.state = {
     products: [],
     filteredProducts: []
     };
     }
-
 componentDidMount() {
-    fetch("http://api.jsonbin.io/b/5bad10ffa97c597b3c5a1597/6")
+    fetch("//api.jsonbin.io/b/5bbcacb571856b56d72b740c")
         .then(result => result.json())
         .then(resultJson => {
             this.setState({
@@ -26,7 +25,6 @@ componentDidMount() {
             })
         });
       }
-
 waterfallFilter() {
   let productsToFilter = [...this.state.products];
   let filteredLocations = productsToFilter.filter( location => location.waterFall === true);
@@ -36,7 +34,6 @@ waterfallFilter() {
     }
   )
 }
-
 priceFilter() {
   let productsToFilter = [...this.state.products];
   let filteredPrice = productsToFilter.filter( location => location.price < 600 );
@@ -46,13 +43,11 @@ priceFilter() {
     }
   )
 }
-
 resetFilter() {
   this.setState({
     filteredProducts: this.state.products
   })
 }
- 
   render() {
     return (
       <BrowserRouter>
@@ -68,10 +63,10 @@ resetFilter() {
               )
             }/>
           </Switch>
+          <FooterContent />
         </div>
       </BrowserRouter>
     );
   }
 }
-
 export default App;

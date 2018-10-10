@@ -20,7 +20,7 @@ const Contact = () => {
                     <input name="email"/>
                 </div>   
                 <select name="experiences">
-                    <option value=""disabled selected>Choose here</option>
+                    <option value=""disabled selected>Choose Location</option>
                     <option value="blowingRock">Blowing Rock</option>
                     <option value="saluda">Saluda</option>
                     <option value="hotSprings">Hot Springs</option>
@@ -34,4 +34,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
