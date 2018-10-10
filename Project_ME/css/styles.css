@@ -154,7 +154,11 @@ header {
     height: 400px;
     width: 350px;
 }
-
+.paragraph {
+    width: 80%;
+    margin: 5% auto;
+    line-height: 20px;
+}
 /***********************************************
 
  about me
@@ -293,7 +297,9 @@ body {
     margin-top: 5%;
     margin-left: 5%;
 }
-
+.resume {
+    line-height: 40px;
+}
 /*********************************************
 
  code pen
