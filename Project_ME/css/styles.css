@@ -141,8 +141,8 @@ figure {
 
  *******************************************/
 header {
-     background: 
-    url(../imgs/headerImg.png);
+    background: 
+        url(../imgs/headerImg.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
@@ -272,6 +272,13 @@ body {
     font-style: italic;
     color: #8e8e90;
 }
+hr {
+    width: 900px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
 
 /**************************************************
 
@@ -367,8 +374,12 @@ contact form
     margin-top: 5%;
     margin-left: 5%;
 }
-.contactInfo {
+.contactInfo, .commentBox {
     margin-top: 2%;
+}
+.contactInfo ::placeholder {
+    color: red;
+    text-align: center;
 }
 .submit {
     height: 20px;
@@ -376,6 +387,9 @@ contact form
     margin: 20px;
     color: #49494b;
     font-size: 30px;
+}
+.submit:hover {
+    color: #bd8c7d;
 }
 
 /*************************************************
