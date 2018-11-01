@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -24,21 +92,34 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
 body {
 	line-height: 1;
 }
-ol, ul {
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
@@ -59,80 +140,79 @@ Gallery Page Styles
 
 ****************************************/
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px; 
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
 }
 .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 25%;
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 25%;
 }
 .column img {
-    margin-top: 50%; 
-    vertical-align: middle;
+	margin-top: 50%;
+	vertical-align: middle;
 }
 img {
-    height: 300px;
-    width: 250px;
+	height: 300px;
+	width: 250px;
 }
 figure {
-    display: inline-block;
+	display: inline-block;
 }
 .gallery {
-    margin-top: 5%;
-    margin-left: 5%;
+	margin-top: 5%;
+	margin-left: 5%;
 }
 .galleryHeader {
-    background: 
-    url(../imgs/trees.jpg);
-    background-repeat: no-repeat;
-    height: 300px;
-    width: 100%;
-    position: relative;
-    background-position: 0px -150px; 
-} 
+	background: url(../imgs/trees.jpg);
+	background-repeat: no-repeat;
+	height: 300px;
+	width: 100%;
+	position: relative;
+	background-position: 0px -150px;
+}
 .galleryHeader h1 {
-    position: absolute;
-    color: #49494b;
-    margin-top: 5%;
-    margin-left: 5%;
+	position: absolute;
+	color: #49494b;
+	margin-top: 5%;
+	margin-left: 5%;
 }
 .container {
-    position: relative;
-    overflow: hidden;
-    background-color: #49494b;
+	position: relative;
+	overflow: hidden;
+	background-color: #49494b;
 }
-.content-overlay:hover img{
-    opacity: 0.2;
+.content-overlay:hover img {
+	opacity: 0.2;
 }
 .content-details {
-    width: 100%;
-    position: absolute;
-    overflow: hidden;
-    z-index: 1;
-    top: 100px;
-    padding: 15px 20px;
-    color: white;
-    display: none;
+	width: 100%;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+	top: 100px;
+	padding: 15px 20px;
+	color: white;
+	display: none;
 }
- .content-overlay:hover ~ .content-details{
-    display: block;
+.content-overlay:hover ~ .content-details {
+	display: block;
 }
 .contentImg {
-    position: relative;
+	position: relative;
 }
 @media screen and (max-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
-    }
+	.column {
+		flex: 50%;
+		max-width: 50%;
+	}
 }
 @media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
+	.column {
+		flex: 100%;
+		max-width: 100%;
+	}
 }
 
 /*******************************************
@@ -141,23 +221,22 @@ figure {
 
  *******************************************/
 header {
-    background: 
-        url(../imgs/headerImg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 300px;
-    width: 100%;
-    position: relative;
+	background: url(../imgs/headerImg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 300px;
+	width: 100%;
+	position: relative;
 }
 .mainImg {
-    margin-top: 5%;
-    height: 400px;
-    width: 350px;
+	margin-top: 5%;
+	height: 400px;
+	width: 350px;
 }
 .paragraph {
-    width: 80%;
-    margin: 5% auto;
-    line-height: 20px;
+	width: 60%;
+	margin: 5% auto;
+	line-height: 30px;
 }
 /***********************************************
 
@@ -165,24 +244,23 @@ header {
 
  ***********************************************/
 .bioHeader {
-    background: 
-    url(../imgs/trees.jpg);
-    background-repeat: no-repeat;
-    height: 300px;
-    width: 100%;
-    position: relative;
-    background-position: 0px -150px;
+	background: url(../imgs/trees.jpg);
+	background-repeat: no-repeat;
+	height: 300px;
+	width: 100%;
+	position: relative;
+	background-position: 0px -150px;
 }
-.bioHeader h1{
-    position: absolute;
-    color: #49494b;
-    margin-top: 5%;
-    margin-left: 5%;
+.bioHeader h1 {
+	position: absolute;
+	color: #49494b;
+	margin-top: 5%;
+	margin-left: 5%;
 }
 .profilePhoto {
-    height: 300px;
-    width: 250px;
-    margin-top: 20px;
+	height: 300px;
+	width: 300px;
+	margin-top: 20px;
 }
 
 /*****************************************
@@ -191,94 +269,97 @@ header {
 
  *****************************************/
 nav {
-    display: block;
-    text-align: center;
-    margin: auto;
-    margin-top: 2%;
+	display: block;
+	text-align: center;
+	margin: auto;
+	margin-top: 2%;
 }
 
 .navUl {
-    list-style-type: none;
-    margin: 1%;
-    padding: 0;
-    width: auto;
+	list-style-type: none;
+	margin: 1%;
+	padding: 0;
+	width: auto;
 }
 
 .navUl li {
-    display: inline-block; 
+	display: inline-block;
 }
 
 .navA {
-    background-color: #d1bfa7;
-    padding: 8px;
-    color: #49494b;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;}
+	background-color: #d1bfa7;
+	padding: 8px;
+	color: #49494b;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
 
 .navA:hover {
-    background-color: #bd8c7d;
+	background-color: #bd8c7d;
 }
 @media screen and (max-width: 600px) {
-    .navUl {
-        list-style-type: none;
-        margin: none;
-        padding: none;
-        background-color: #d1bfa7;
-        }
-    .navA {
-        display: block;
-        color: white;
-        padding: 8px 16px;
-        text-decoration: none;
-        }
-    .navA:hover {
-        background-color: #8e8e90;
-                }
-    }
+	.navUl {
+		list-style-type: none;
+		margin: none;
+		padding: none;
+		background-color: #d1bfa7;
+	}
+	.navA {
+		display: block;
+		color: white;
+		padding: 8px 16px;
+		text-decoration: none;
+	}
+	.navA:hover {
+		background-color: #8e8e90;
+	}
+}
 
 /**************************************************
 
 text styling
 
 ***************************************************/
-*, .contactText{
-    font-family: 'Roboto', sans-serif;}
+*,
+.contactText {
+	font-family: 'Roboto', sans-serif;
+}
 
 h1 {
-    font-family: 'Meddon', cursive;    
-    font-size: 40px;
-    text-align: center; 
-    margin: 4%;
+	font-family: 'Meddon', cursive;
+	font-size: 40px;
+	text-align: center;
+	margin: 4%;
 }
 
 h2 {
-    font-size: 30px; 
-    font-weight: bold;
+	font-size: 30px;
+	font-weight: bold;
 }
 
-h2 ul li{
-    text-align: justify;
+h2 ul li {
+	text-align: justify;
 }
 
-p, .resume {
-    margin-top: 5%;
+p,
+.resume {
+	margin-top: 5%;
 }
 
 body {
-    text-align: center;
+	text-align: center;
 }
 .quote {
-    font-style: italic;
-    color: #8e8e90;
+	font-style: italic;
+	color: #8e8e90;
 }
 hr {
-    width: 900px;
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	width: 900px;
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
-
 
 /**************************************************
 
@@ -286,26 +367,25 @@ hr {
 
  **************************************************/
 .references {
-    color: black;
+	color: black;
 }
 
 .resumeHeader {
-    background: 
-   url(../imgs/trees.jpg);
-   background-repeat: no-repeat;
-   height: 300px;
-   width: 100%;
-   position: relative;
-   background-position: 0px -150px;
+	background: url(../imgs/trees.jpg);
+	background-repeat: no-repeat;
+	height: 300px;
+	width: 100%;
+	position: relative;
+	background-position: 0px -150px;
 }
 .resumeHeader h1 {
-    position: absolute;
-    color: #49494b;
-    margin-top: 5%;
-    margin-left: 5%;
+	position: absolute;
+	color: #49494b;
+	margin-top: 5%;
+	margin-left: 5%;
 }
-.resume {
-    line-height: 40px;
+.resume ul li {
+	line-height: 40px;
 }
 /*********************************************
 
@@ -313,40 +393,39 @@ hr {
 
  *********************************************/
 .codePen {
-    margin-top: 5%;
+	margin-top: 5%;
 }
 
 .codePen p {
-    margin-bottom: 5%;
+	margin-bottom: 5%;
 }
 
 .codePen a {
-    color: black;
+	color: black;
 }
 .codeImg {
-    height: 25em;
-    width: 38em;
+	height: 25em;
+	width: 38em;
 }
 .codeHeader {
-    background: 
-   url(../imgs/trees.jpg);
-   background-repeat: no-repeat;
-   height: 300px;
-   width: 100%;
-   position: relative;
-   background-position: 0px -150px;
+	background: url(../imgs/trees.jpg);
+	background-repeat: no-repeat;
+	height: 300px;
+	width: 100%;
+	position: relative;
+	background-position: 0px -150px;
 }
 .codeHeader h1 {
-    position: absolute;
-    color: #49494b;
-    margin-top: 5%;
-    margin-left: 5%;
+	position: absolute;
+	color: #49494b;
+	margin-top: 5%;
+	margin-left: 5%;
 }
 @media screen and (max-width: 600px) {
-    .codeImg{
-        height: 250px;
-        width: 400px;
-    }
+	.codeImg {
+		height: 250px;
+		width: 400px;
+	}
 }
 
 /*******************************************
@@ -354,42 +433,49 @@ hr {
 contact form
 
 ********************************************/
-.form {
-    text-align: center;
-    display: block;
-    margin-top: 5%;
+.contactForm {
+	text-align: center;
+	display: block;
+	background-color: #d1bfa7;
+	width: 30%;
+	margin: 5% auto 0 auto;
+	padding: 10px 0;
 }
 .contactHeader {
-    background: 
-    url(../imgs/trees.jpg);
-    background-repeat: no-repeat;
-    height: 300px;
-    width: 100%;
-    position: relative;
-    background-position: 0px -150px; 
+	background: url(../imgs/trees.jpg);
+	background-repeat: no-repeat;
+	height: 300px;
+	width: 100%;
+	position: relative;
+	background-position: 0px -150px;
 }
 .contactHeader h1 {
-    position: absolute;
-    color: #49494b;
-    margin-top: 5%;
-    margin-left: 5%;
+	position: absolute;
+	color: #49494b;
+	margin-top: 5%;
+	margin-left: 5%;
 }
-.contactInfo, .commentBox {
-    margin-top: 2%;
+.contactInfo,
+.commentBox {
+	margin-top: 2%;
 }
 .contactInfo ::placeholder {
-    color: red;
-    text-align: center;
+	color: red;
+	text-align: center;
+}
+.contactInfo input {
+	padding: 5px;
+	width: 200px;
 }
 .submit {
-    height: 20px;
-    width: 100px;
-    margin: 20px;
-    color: #49494b;
-    font-size: 30px;
+	height: 20px;
+	width: 100px;
+	margin: 20px;
+	color: #49494b;
+	font-size: 30px;
 }
 .submit:hover {
-    color: #bd8c7d;
+	color: #bd8c7d;
 }
 
 /*************************************************
@@ -398,17 +484,17 @@ contact form
 
  *************************************************/
 footer {
-    font-family: 'Roboto', sans-serif;
-    margin-top: 10%;
-    text-align: center;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 10%;
+	text-align: center;
 }
 
-footer, footer a {
-    text-decoration: none;
+footer,
+footer a {
+	text-decoration: none;
 }
 
 .logo {
-    height: 40px;
-    width: 40px;
+	height: 40px;
+	width: 40px;
 }
-
